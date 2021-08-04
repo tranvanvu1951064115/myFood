@@ -1,0 +1,231 @@
+/* Header section */
+.header {
+    font-size: 24px;
+}
+
+.header__main {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    right: 0;
+    max-width: 1224px;
+    margin: 0 auto;
+    z-index: 10;
+    background-color: #fff;
+    box-shadow: 1px 1px 2px 2px rgba(0,0,0,0.2);
+}
+
+.header__main-menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__main-item,
+.header__main-item-cate {
+    padding: 16px;
+}
+
+.header__main-item:hover,
+.header__main-item-cate:hover {
+    background-color: #ccc;
+}
+
+input#check-cate {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    border: none;
+}
+
+.header__main-item-cate {
+    position: relative;
+}
+
+.header__main-item-cate > input:checked ~ .header__main-category-menu {
+    transform: unset; 
+    animation: sliding 0.5s ease-in;
+}
+
+.header__main-category-menu {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    transform: translateX(-100%);
+    width: 35%;
+    background-color: #fff;
+    box-shadow: 0 1px 2px 2px rgba(0,0,0,0.2);
+}
+
+.header__main-category-item {
+}
+
+.header__main-category-item:hover {
+    background-color: #ccc;
+}
+
+.header__main-category-link {
+    font-size: 24px;
+    text-shadow: 1px 1px #000;
+    color: #000;
+    display: block;
+    padding: 20px;
+    cursor: pointer;
+}
+
+/* Content section */
+/* Category section */
+.content {
+    margin-top: 13.6rem!important;
+}
+
+.content__cate-item-food {
+    display: block;
+    max-height: 408px;
+    width: 100%;
+}
+
+.content__cate-item-food-des {
+    text-align: center;
+}   
+
+.content__cate-item-food-name {
+    display: block;
+}
+
+.content__cate-item-food-main-des {
+    display: block;
+    font-size: 15px;
+    margin: 15px 0;
+}
+
+/*  */
+
+.content__cate-item-bar {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+.content__cate-item-bar-link {
+    display: inline-block;
+    padding: 8px 12px;
+}
+
+.content__cate-item-bar-link span,
+.content__cate-item-bar-link i{
+    font-size: 20px;
+    color: #000;
+}
+
+.content__cate-item-bar-link:hover {
+    background-color: #000;
+}
+
+.content__cate-item-bar-link:hover span,
+.content__cate-item-bar-link:hover i,
+.content__cate-item-bar-link--active span {
+    color: #fff!important;
+}
+
+.content__cate-item-bar-link:first-child i {
+    transform: rotate(180deg);
+}
+
+.content__cate-item-bar-link--active {
+    background-color: #000;
+}
+
+/* About me section */
+.content__about-me {
+    text-align: center;
+}
+
+.content__about-me-header {
+    display: block;
+    padding: 40px 0 22px 0;
+}
+
+.footer-various h3 {
+    padding: 15px 0;
+    text-shadow: 1px 1px #000;
+}
+
+.content__about-me-des-intro h4{
+    font-size: 20px;
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 10px;
+}
+
+.content__about-me-des-slogan h4 {
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.content__about-me-des-main {
+    font-size: 15px;
+    margin-top: 15px;
+    margin-bottom: 100px;
+}
+
+/* footer section */
+
+.footer-various {
+    padding: 28px 0 48px 0;
+}
+
+.footer-various h2{
+    padding: unset;
+}
+
+.footer-various__footer a {
+    text-decoration: underline;
+    color: #000;
+    font-style: oblique;
+}
+
+.footer-various__blogpost {
+    padding: 16px;
+    display: flex;
+}
+
+.footer-various__blogpost:hover {
+    background-color: #ccc;
+}
+
+.footer-various__blogpost img {
+    display: inline-block;
+    width: 50px;
+    margin-right: 16px;
+}
+
+.footer-various__blogpost-des span:first-child {
+    font-size: 18px;
+}
+
+.footer-various__blogpost span:last-child {
+    font-size: 16px;
+}
+
+.footer-various__populartags span {
+    display: inline-block;
+    padding: 2px 8px;
+    vertical-align: center;
+    background-color: #616161;
+    color: #fff;
+    font-size: 12px;
+    margin-bottom: 16px;
+}
+
+.footer-various__populartags--active {
+    font-size: 15px!important;
+    background-color: #000!important;
+}
+
+
+

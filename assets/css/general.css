@@ -1,0 +1,54 @@
+html {
+    font-size: 62.5%!important;
+    font-family: 'Karma', serif!important;
+    scroll-behavior: smooth;
+}
+
+.specify-mt-20 ~ li {
+    margin-top: 20px;
+}
+
+hr {
+    border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+h3 {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+p {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 15px;
+    text-shadow: 0 0 1px rgba(0,0,0,0.2);
+}
+
+@keyframes sliding {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: unset; 
+    }
+}
+
+@media (max-width: 739px) {
+    .row.separate-site .col {
+        padding-left: 12px!important;
+        padding-right: 12px!important;
+    }
+}
+
+@media (max-width: 1023px) {
+    .content__about-me-head-img {
+        display: block;
+        width: 100%;
+    }
+}
+
+
